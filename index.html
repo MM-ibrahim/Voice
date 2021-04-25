@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Voice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 0px;
+            border: none;
+        }
+        
+        .navbar-inverse {
+            background-color: #333;
+        }
+        
+        .navbar-nav {
+            margin: 1px -15px;
+        }
+        
+        .navbar-inverse .navbar-toggle {
+            border-color: transparent;
+        }
+        
+        .navbar-inverse .navbar-nav>li>a {
+            color: #3388d2;
+            font-weight: bold;
+        }
+        
+        .navbar-inverse .navbar-nav>li>a:hover {
+            color: #333;
+        }
+        
+        .navbar-inverse {
+            background-color: #f6f6f6;
+        }
+        
+        .navbar-toggle {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        </button>
+                <img src="image/logo.jpg" height="55px" alt="">
+            </div>
+            <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#Page-Selector">Page-Selector</a></li>
+                    <li><a href="#Calendar">Calendar</a></li>
+                    <li><a href="#Clock">Clock</a></li>
+                    <li><a href="#Alarm">Alarm</a></li>
+                    <li><a href="#News">News</a></li>
+                    <li><a href="#Spotify">spotify</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- start landing section -->
+    <div class="landing">
+        <div class="intro-text">
+            <h1>Voice Commands </h1>
+        </div>
+    </div>
+
+    <!-- end landing section -->
+
+    <!-- start features -->
+
+    <div class="features">
+        <div class="container">
+            <div class="card" id="Page-Selector">
+                <h2>Page Selector</h2>
+                <p>To Move From the First Page to the ather pages , You Have to Say :-</p>
+                <ul>
+                    <li>
+                        <p><q> Page 1 or Slide 1 </q> . </p>
+                    </li>
+                    <li>
+                        <p><q> Page 2 or Slide 2 </q> . </p>
+                    </li>
+                </ul>
+                <p>For The Voice Command These Can't be Changed .</p>
+            </div>
+            <div class="card" id="Calendar">
+                <h2>Calendar</h2>
+                <p>To Set an Event , You Can Talk To Alexa in The Way You Want but make Sure using Word " event ". </p>
+                <ul>
+                    <li><q> Alexa </q> .</li>
+                    <li>
+                        <p><q> Set an event or Please add event  , add event </q> .</p>
+                    </li>
+                </ul>
+                <p>Then it Will ask You about The Name , Time and Date .</p>
+                <ul>
+                    <li><q> You Will answer </q> .</li>
+                </ul>
+            </div>
+            <div class="card" id="Clock">
+                <h2>Clock</h2>
+                <p>To Ask About The Time or Date , Just Say :-</p>
+                <ul>
+                    <li>
+                        <p> <q> Alexa </q> , This One is Necessary .</p>
+                    </li>
+                    <li>
+                        <p> <q> What is The Time ? </q></p>
+                    </li>
+                    <li>
+                        <p> <q> What is The Date Today? </q></p>
+                    </li>
+                </ul>
+                <p>These Two You Can Ask Alexa in The Way You Want .</p>
+            </div>
+            <div class="card" id="Alarm">
+                <h2> Alarm </h2>
+                <p>To Set Alarm You Have to Call Alexa Just Say :-</p>
+                <ul>
+                    <li>
+                        <p><q> Alexa </q> . </p>
+                    </li>
+                </ul>
+                <p>Now Say :- </p>
+                <ul>
+                    <li>
+                        <p><q> Set Alarm at </q> ( The Time You Want , PM or AM) .</p>
+                    </li>
+                </ul>
+                <p>To Stop The Alarm You Have to Say :- </p>
+                <ul>
+                    <li>
+                        <p><q> Alexa Stop The Alarm </q>.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card" id="News">
+                <h2>News</h2>
+                <p>To Ask About The Time or Date , Just Say :-</p>
+                <p>here you only need to say :- </p>
+                <ul>
+                    <li><q> Read The News </q></li>
+                </ul>
+            </div>
+            <div class="card" id="Spotify">
+                <h2>Spotify</h2>
+                <ul>
+                    <li>
+                        <p> there are different ways to play a song .</p>
+                        <p>first say :- </p>
+                        <ul>
+                            <li>
+                                <p><q> play </q> ( name of the artist ) .</p>
+                            </li>
+                            <li>
+                                <p><q> play </q> ( name of the song ) .</p>
+                            </li>
+                            <li>
+                                <p><q> playlist </q> ( name of the playlist ) .</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>to stop the song , say :-</p>
+                        <ul>
+                            <li><q> stop </q> .</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p> to play the next track :- </p>
+                        <ul>
+                            <li><q> next </q> .</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="card" id="Spotify">
+                <ul>
+                    <li>
+                        <p> to play the previous song say :- </p>
+                        <ul>
+                            <li><q> previous </q> .</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p> to setup the volume say :- </p>
+                        <ul>
+                            <li>
+                                <p><q> set volume to </q> ( the volume you want from 0 to 100).</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>to increasse the volume by 5% say :- </p>
+                        <ul>
+                            <li>
+                                <p><q> volume up </q>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>to decrease the volume by 5% say :- </p>
+                        <ul>
+                            <li>
+                                <p><q> volume down </q>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end features -->
+
+        <!-- start footer -->
+        <div class="footer">
+            &copy; 2021 <span>Smart Mirror</span> All Right Reserved
+        </div>
+        <!-- end footer -->
+</body>
+
+</body>
+
+</html>
